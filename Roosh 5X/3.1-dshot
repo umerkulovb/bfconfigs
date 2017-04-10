@@ -1,0 +1,55 @@
+# diff
+# Betaflight / BETAFLIGHTF3 3.1.6 Feb 21 2017 / 14:14:49 (1fd502c)
+name ABADONNA
+
+feature -BLACKBOX
+feature -SDCARD
+feature LED_STRIP
+feature AIRMODE
+map TAER1234
+serial 0 32 115200 57600 0 115200
+serial 2 2048 115200 57600 0 115200
+led 0 0,15::A:2
+mode_color 6 0 10
+mode_color 6 1 2
+aux 0 0 0 1700 2100
+set fpv_mix_degrees = 30
+set min_throttle = 1040
+set motor_pwm_protocol = DSHOT600
+set vbat_min_cell_voltage = 34
+set vbat_warning_cell_voltage = 36
+set ibat_scale = 220
+set acc_hardware = NONE
+set pid_process_denom = 1
+set osd_cap_alarm = 900
+set osd_time_alarm = 3
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 1046
+set osd_flytimer_pos = 2455
+set osd_ontimer_pos = 374
+set osd_flymode_pos = 364
+set osd_throttle_pos = 385
+set osd_horizon_pos = 200
+set osd_current_pos = 2401
+set osd_craft_name_pos = 2081
+set osd_gps_sats_pos = 1410
+profile 0
+
+set anti_gravity_gain =  2.000
+set setpoint_relax_ratio = 30
+set d_setpoint_weight = 190
+set d_pitch = 38
+set p_roll = 45
+set i_roll = 48
+set d_roll = 28
+set p_yaw = 90
+rateprofile 0
+rateprofile 0
+
+set rc_rate = 82
+set rc_rate_yaw = 82
+set rc_expo = 10
+set rc_yaw_expo = 10
+set roll_srate = 87
+set pitch_srate = 87
+set yaw_srate = 87
